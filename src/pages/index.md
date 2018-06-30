@@ -4,7 +4,7 @@ title: Arlington Central Church
 meta_title: Home | ACC
 meta_description: >-
   Arlington Central Church is a Christ focuses discipling church.
-heading: Arling Central Church
+heading: Arlington Central Church
 description: >-
   A church of friends and family.
 offerings:
