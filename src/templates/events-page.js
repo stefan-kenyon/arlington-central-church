@@ -40,7 +40,14 @@ export const EventsPageTemplate = ({
       <section className='section'>
         <div className='container'>
           {events.map((evt, id) =>
-            <Event key={id} title={evt.title} description={evt.description} />
+            console.log('Event is', evt) || 
+            <Event
+              key={id}
+              title={evt.title}
+              description={evt.description}
+              loc={evt.loc}
+              time={evt.time}
+              />
           )}
         </div>
       </section>
@@ -91,6 +98,11 @@ export const eventsPageQuery = graphql`
         events {
           title
           description
+          loc
+          time {
+            start
+            end
+          }
         }
       }
     }

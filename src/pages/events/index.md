@@ -6,10 +6,19 @@ meta_title: Events | Gatsby Starter Business
 meta_description: >-
   A list of events for the Arlington Central Church - see where to get involved.
 events:
-  - title: Church Pool Party
+  - title: Pool Party
+    loc: goo.gl/maps
     description: >-
       A pool party!
-    location: Blah Blah Somewhere rec center
-    time: 10:00am - 12:00pm
+    time:
+      start: 10am
+      end: 3pm
+  - title: Titus Day
+    loc: My house
+    description: >-
+      Titus is precious and he wants to share that with you!
+    time:
+      start: Nap time
+      end: Dinner time
 ---
 
