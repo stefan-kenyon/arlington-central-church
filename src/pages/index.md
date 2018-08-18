@@ -12,7 +12,7 @@ offerings:
     - image: /img/meeting-space.png
       text: >
         A place to mature in your faith as a disciple of Christ. We use
-        a technique called 'a story and a conversation' to engate ourselves
-        in the grater narrative of God's story. Come join our family
-        as we grow together and "keep in step with the Spirit".
+        a technique called 'a story and a conversation' to engage ourselves
+        in the greater narrative of God's story. Come join our family
+        as we grow together and "keep in step with the Spirit"!
 ---
