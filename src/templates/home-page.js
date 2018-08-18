@@ -5,7 +5,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Offerings from '../components/Offerings'
-import Testimonials from '../components/Testimonials'
 
 export const HomePageTemplate = ({
   title,
@@ -13,8 +12,7 @@ export const HomePageTemplate = ({
   description,
   offerings,
   meta_title,
-  meta_description,
-  testimonials,
+  meta_description
 }) => (
   <div>
     <Helmet>
@@ -67,9 +65,7 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
-
+  })
 }
 
 const HomePage = ({data}) => {
@@ -83,7 +79,6 @@ const HomePage = ({data}) => {
       heading={frontmatter.heading}
       description={frontmatter.description}
       offerings={frontmatter.offerings}
-      testimonials={frontmatter.testimonials}
     />
   )
 }
@@ -112,10 +107,6 @@ export const pageQuery = graphql`
             image
             text
           }
-        }
-        testimonials {
-          author
-          quote
         }
       }
     }
