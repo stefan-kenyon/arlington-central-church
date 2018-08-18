@@ -15,53 +15,31 @@ collections:
         name: "events"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "events-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string},
-          - {label: Events, name: events, widget: list, fields: [
-              {
-                label: "Event Name",
-                name: title,
-                widget: string
-              },
-              {
-                label: Event Location,
-                name: loc,
-                widget: object,
-                fields: [{
-                  label: Name,
-                  name: name,
-                  widget: string
-                }, {
-                  label: Optional Google Maps Link,
-                  name: gmapslink,
-                  widget: string
-                }]
-              },
-              {
-                label: Event Description,
-                name: description,
-                widget: text
-              },
-              {
-                label: Event Time,
-                name: time,
-                widget: object,
-                fields: [{
-                  label: Event Date,
-                  name: date,
-                  widget: date,
-                  format: "MM/DD/YYYY"
-                }, {
-                  label: Start Time,
-                  name: start,
-                  widget: string
-                }, {
-                  label: End Time,
-                  name: end,
-                  widget: string
-                }]
-              }]}
-              
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"},
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - label: "Event Name"
+                name: "title"
+                widget: "string"
+              - label: "Event Location"
+                name: "loc"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Optional Google Maps Link", name: "gmapslink",widget: string}
+              - label: "Event Description"
+                name: "description"
+                widget: "text"
+              - label: "Event Time"
+                name: "time"
+                widget: "object"
+                fields:
+                  - { label: "Event Date", name: "date", widget: "date", format: "MM/DD/YYYY"}
+                  - { label: "Start Time", name: "start", widget: "string"}
+                  - { label: "End Time", name: "end", widget: "string"}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
 
