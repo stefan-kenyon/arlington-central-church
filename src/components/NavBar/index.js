@@ -21,6 +21,7 @@ const NavBar = () => {
             Events
           </Link>
         </div>
+    {/*
         <div className='navbar-end'>
         <div className='navbar-item'>
           <div className='field is-grouped'>
@@ -34,6 +35,7 @@ const NavBar = () => {
           </div>
         </div>
         </div>
+      */}
       </div>
     </nav>
   )
