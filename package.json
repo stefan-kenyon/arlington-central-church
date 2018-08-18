@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-business",
-  "description": "Gatsby Business Website Starter",
+  "name": "Arlington Central Church website",
+  "description": "Church website built with GatsbyJS",
   "version": "1.0.0",
-  "author": "Vaibhav Sharma",
+  "author": "Arlington Central Church",
   "dependencies": {
     "bulma": "^0.6.2",
     "gatsby": "^1.9.273",

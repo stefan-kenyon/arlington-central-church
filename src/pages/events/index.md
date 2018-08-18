@@ -2,7 +2,7 @@
 templateKey: 'events-page'
 title: Events
 subtitle: See what we're up to!
-meta_title: Events | Gatsby Starter Business
+meta_title: Church Events
 meta_description: >-
   A list of events for the Arlington Central Church - see where to get involved.
 events:
