@@ -16,7 +16,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "events-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"},
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
           - label: "Events"
             name: "events"
             widget: "list"
