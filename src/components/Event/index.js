@@ -27,7 +27,7 @@ const Event = ({title, description, loc, time: { date, start, end }}) => {
       <h2>{title}</h2>
       <p>{description}</p>
       <EventLocation loc={loc} />
-      <p>From {start} to {end} on {formatDate(date)}</p>
+      <p>From <span className="time start">{start}</span> to <span className="time end">{end}</span> on <span className="date">{formatDate(date)}</span></p>
     </div>
   )
 }
