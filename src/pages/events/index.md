@@ -13,8 +13,8 @@ events:
       start: '10:30am'
     title: Pool Party
   - description: >-
-      Family group time! A place to share your life and your passion with one
-      another.
+      Family group time! A place to share your life, passions, and ministry with
+      one another.
     loc:
       name: Various houses
     time:
