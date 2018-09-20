@@ -6,6 +6,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Event from '../components/Event'
 
+const getiFrameHtml = () => ({  
+  __html: '<iframe src="https://calendar.google.com/calendar/embed?title=ACC%20Events&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%2333cc00&amp;src=arlingtoncentralchurch%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>'
+});
+
 export const EventsPageTemplate = ({
   title,
   subtitle,
@@ -38,16 +42,8 @@ export const EventsPageTemplate = ({
         </div>
       </section>
       <section className='section'>
-        <div className='container'>
-          {events.map((evt, id) =>
-            <Event
-              key={id}
-              title={evt.title}
-              description={evt.description}
-              loc={evt.loc}
-              time={evt.time}
-              />
-          )}
+        <div className='container center'>
+          <div dangerouslySetInnerHTML={getiFrameHtml()}></div>
         </div>
       </section>
     </div>
