@@ -20,7 +20,14 @@ const NavBar = () => {
           <Link className='navbar-item' to='/events'>
             Events
           </Link>
+          <Link className='navbar-item' to='/giving'>
+            Giving
+          </Link>
+          <Link className='navbar-item' to='/contact'>
+            Contact
+          </Link>
         </div>
+        
     {/*
         <div className='navbar-end'>
         <div className='navbar-item'>

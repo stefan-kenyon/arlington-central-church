@@ -1,7 +1,7 @@
 ---
 templateKey: events-page
 title: Events
-subtitle: See what we're up to!
+subtitle: Come To Stuff With Us!
 events:
   - description: "A pool party! Bring your floaties and your friends ⛱️\U0001F929."
     loc:
@@ -32,7 +32,7 @@ events:
       end: '12:00pm'
       start: '10:00am'
     title: Gathering
-meta_title: Church Events
+meta_title: ACC | Events
 meta_description: A list of events for the Arlington Central Church - see where to get involved.
 ---
 
