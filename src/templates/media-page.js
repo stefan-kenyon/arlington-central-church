@@ -5,6 +5,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Content, {HTMLContent} from '../components/Content'
+import { Audio } from '../components/Media/audio'
+
+const currentMedia = [
+  {
+    title: 'Tom on Scriptures and Discipleship',
+    description: 'Tom talk through how a discpleship approaches scriptures, accompanied by a powerpoint which we don\'t here to share with you. :(',
+    googleLink: 'https://drive.google.com/file/d/1KSkFNJFs06toWqVvwH8zFfVJrrj-oqgb/preview'
+  }
+];
 
 export const MediaPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
@@ -32,6 +41,10 @@ export const MediaPageTemplate = ({title, content, contentComponent}) => {
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <PageContent className='content' content={content} />
+              </div>
+              <div className='section'>
+                {currentMedia.map((ai, i) =>
+                  <Audio key={i} audioItem={ai} ></Audio>)}
               </div>
             </div>
           </div>
