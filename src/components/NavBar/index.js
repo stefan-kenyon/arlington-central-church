@@ -20,8 +20,14 @@ const NavBar = () => {
           <Link className='navbar-item' to='/events'>
             Events
           </Link>
+          <Link className='navbar-item' to='/meetings'>
+            Meetings
+          </Link>
           <Link className='navbar-item' to='/giving'>
             Giving
+          </Link>
+          <Link className='navbar-item' to='/media'>
+            Media
           </Link>
           <Link className='navbar-item' to='/contact'>
             Contact

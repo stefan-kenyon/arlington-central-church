@@ -1,12 +1,12 @@
 /**
- * Created by skenyon on 31DEC2018
+ * Created by skenyon on 12FEB2019
  */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Content, {HTMLContent} from '../components/Content'
 
-export const GivingPageTemplate = ({title, content, contentComponent}) => {
+export const MediaPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -41,13 +41,13 @@ export const GivingPageTemplate = ({title, content, contentComponent}) => {
   )
 }
 
-GivingPageTemplate.propTypes = {
+MediaPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const GivingPage = ({data}) => {
+const MediaPage = ({data}) => {
   const {markdownRemark: post} = data
 
   return (
@@ -56,7 +56,7 @@ const GivingPage = ({data}) => {
         <title>{post.frontmatter.meta_title}</title>
         <meta name='description' content={post.frontmatter.meta_description} />
       </Helmet>
-      <GivingPageTemplate
+      <MediaPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -65,14 +65,14 @@ const GivingPage = ({data}) => {
   )
 }
 
-GivingPage.propTypes = {
+MediaPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default GivingPage
+export default MediaPage
 
-export const givingPageQuery = graphql`
-  query GivingPage($id: String!) {
+export const mediaPageQuery = graphql`
+  query MediaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
